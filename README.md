@@ -50,3 +50,29 @@ The Strategy Design Pattern is implemented, allowing easy creation of new game v
 ## Conclusion
 This CLI-based project follows established design patterns and principles to create an extendable and reusable Uno game engine. It has a strong adherence to clean code and SOLID principles, making it easy for developers to implement new game variations. The engine simulates the entire gameplay and provides a clear output for each player’s actions and the game's final winner.
 
+## Tips to run the game:
+### 1. Open a terminal/command prompt.
+### 2. Run the following command to clone the repository:
+```bash
+git clone https://github.com/Abdullahshatarh122/Uno-Game-Engine.git
+```
+### 3. Navigate to the project directory:
+```bash
+cd Uno-Game-Engine
+```
+### 4. Compile the project using the javac command and save the compiled files to the /bin dirctory:
+```bash
+javac -d bin src/*.java  
+```
+### 5. Navigate to the bin dirctory:
+```bash
+cd bin
+```
+### 6. Run the main class(GameDriver) using the java command:
+```bash
+java GameDriver 
+```
+### 7. Enter a sample input:
+enter the number of players  
+enter the name of each player  
+then the game simulation will be displayed with the winner player
