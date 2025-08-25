@@ -45,10 +45,18 @@ public class Simulation {
         int r = 0,b = 0,g = 0,y = 0;
         for(Card card : game.getCurrentPlayer().getPlayerCards()){
             switch (card.getColor()) {
-                case "Blue" -> b++;
-                case "Red" -> r++;
-                case "Green" -> g++;
-                case "Yellow" -> y++;
+                case "Blue":
+                    b++;
+                    break;
+                case "Red":
+                    r++;
+                    break;
+                case "Green":
+                    g++;
+                    break;
+                case "Yellow":
+                    y++;
+                    break;
             }
         }
         int max = Math.max(r,Math.max(b,Math.max(g,y)));
@@ -94,25 +102,25 @@ public class Simulation {
         }
         Card topcard = game.getPlayedCards().getLast();
         switch (topcard.getFunction()) {
-            case "reverse" -> {
+            case "reverse":
                 reverse();
                 game.playCard();
-            }
-            case "skip" -> {
+                break;
+            case "skip":
                 skip();
                 game.playCard();
-            }
-            case "draw tow" -> {
+                break;
+            case "draw tow":
                 drawTow();
                 game.playCard();
-            }
-            case "wild draw four" -> {
+                break;
+            case "wild draw four":
                 wildDrawFour();
                 game.playCard();
-            }
-            default -> {
+                break;
+            default:
                 game.playCard();
-            }
+                break;
         }
         simulate();
     }
