@@ -39,7 +39,7 @@ uses: actions/setup-java@v4
 **What it does:**
 - Spins up Ubuntu virtual machine
 - Downloads your code from GitHub
-- Installs Java 11
+- Installs Java 21
 
 #### Step 2: Compilation
 ```yaml
