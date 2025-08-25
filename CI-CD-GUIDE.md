@@ -139,23 +139,6 @@ Ensures all code meets quality standards before merging.
 - **Style**: Follows Google Java Style Guide
 - **Standards**: Consistent formatting and naming
 
-## Local Development Script: build.sh
-
-### Purpose
-Provides same build process locally for development.
-
-### Usage:
-```bash
-chmod +x build.sh  # Make executable (first time)
-./build.sh         # Run build
-```
-
-### What it does:
-1. Creates `bin/` directory
-2. Compiles Java files
-3. Creates executable JAR
-4. Provides success/failure feedback
-
 ## Developer Workflow
 
 ### For Feature Development:
@@ -198,10 +181,6 @@ chmod +x build.sh  # Make executable (first time)
 - Application must accept input and run without crashing
 - Check GameDriver main method functionality
 
-### Release Issues
-- Releases only created from `main` branch
-- Build job must succeed before release job runs
-- Check GitHub token permissions
 
 
 
