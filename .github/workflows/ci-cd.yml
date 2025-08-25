@@ -28,7 +28,7 @@ jobs:
     - name: Run application test
       run: |
         cd bin
-        echo -e "2\nPlayer1\nPlayer2" | java GameDriver
+        printf "2\nPlayer1\nPlayer2\n" | java GameDriver
     
     - name: Create JAR file
       run: |
